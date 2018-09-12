@@ -1,0 +1,14 @@
+<form>
+<input type="text" name="username" #username placeholder="username"><br><br>
+<input type="text" name="password" #password placeholder="password"><br><br>
+<!-- <button type="button" (click)="gocookie();">Go</button> -->
+<input type="submit" value ="setcookie"(click)="gocookieset(username.value,password.value);"><br><br>
+<input type="submit" value ="deleteAllcookie"(click)="deletecookieall();"><br><br>
+<input type="submit" value ="deleteOne"(click)="deletecookieone(username.value);"><br><br>
+<input type="submit" value ="getOne"(click)="displaycookieOnes(username.value);"><br><br>
+<input type="submit" value ="getAll"(click)="displaycookieall();"><br><br>
+<input type="submit" value ="Check"(click)="checkcookie(username.value);"><br><br>
+ 
+</form>
+
+

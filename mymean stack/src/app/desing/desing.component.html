@@ -1,0 +1,31 @@
+
+  <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Details of Content</h4>
+        <table class = "table table-hover">
+          <thead>
+            <tr>
+            
+              <th>ID</th>
+              <th>Title</th>
+              <th>content</th>
+              <th>FirstName</th>
+              <th>SecondName</th>
+              <th>ThirdName</th>
+             
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let array of myarray">
+            
+                <td>{{array._id}}</td>
+                <td>{{array.title}}</td>
+                <td>{{array.content}}</td>
+                <td>{{array.firstname}}</td>
+                <td>{{array.secondname}}</td>
+                <td>{{array.thirdname}}</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
